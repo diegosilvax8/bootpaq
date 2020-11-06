@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-xl-6">
+          <div class="md-card">
+              <div class="md-card-heading bg-info shadow-z1">
+                  <div class="float-right">
+                    <div class="text-uppercase" now format="dddd"></div>
+                    <br>
+                    <div class="h2 mt-0" now format="h:mm"></div>
+                    <div class="text-muted text-sm" now format="a"></div>
+                  </div>
+                  <div class="md-card-title">San Juan</div>
+                  <small>Día Soleado</small>
+              </div>
+              <div class="md-card-body">
+                  <div class="clearfix">
+                      <div class="float-left">
+                          <p>Humedad 60%</p>
+                      </div>
+                      <div class="float-right">
+                          <h3 class="m-0">23&deg;C</h3>
+                      </div>
+                  </div>
+                  <div class="text-center pv-lg">
+                      <em class="wi wi-day-sunny-overcast fa-4x"></em>
+                  </div>
+                  <div class="clearfix">
+                      <div class="float-left">
+                          <p class="m-0">Max 23&deg;C</p>
+                          <p>Min 16&deg;C</p>
+                      </div>
+                      <div class="float-right">
+                        <div class="text-sm" now format="MMMM"></div>
+                        <br>
+                        <div class="h2 mt-0" now format="D"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="md-card">
+            <div class="md-card-heading bg-purple">
+                <div class="md-card-icon">
+                    <em class="icon-calendar"></em>
+                </div>
+                <div class="md-card-title" now format="MMMM"></div>
+            </div>
+            <datepicker class="ui-datepicker" [(ngModel)]="dt" [minDate]="minDate" [showWeeks]="true"></datepicker>
+        </div>
+    </div>
+  </div>
+
+<div class="container1">
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/1.png" alt="Card image cap">
+      </div>
+      <a class="btn btn-primary" href="/dashboard/v2">Proyectos</a>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/2.png" alt="Card image cap">
+      </div>
+      <a class="btn btn-primary" href="/charts/flot">Procedimientos</a>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/3.png" alt="Card image cap">
+      </div>
+      <div class="btn btn-primary">Campos</div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/4.png" alt="Card image cap">
+      </div>
+      <div class="btn btn-primary">Produccion</div>
+    </div>
+  </div>
+</div>
+
+<div class="container2">
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/5.png" alt="Card image cap">
+      </div>
+      <div class="btn btn-primary">Variedades</div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/6.png" alt="Card image cap">
+      </div>
+      <div class="btn btn-primary">Personas</div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="cuerpo">
+      <div class="contenedor">
+      <img class="imagen" src="assets/img/home/cards/7.png" alt="Card image cap">
+      </div>
+      <div class="btn btn-primary">Reportes</div>
+    </div>
+  </div>
+</div>

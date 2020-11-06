@@ -1,0 +1,69 @@
+<div class="container-md mx-0">
+  <div class="row">
+      <div class="col-lg-3">
+          <div class="card b">
+              <div class="card-header bg-gray-lighter text-bold">Configuración Personal</div>
+              <div class="list-group">
+                  <a href="#" class="list-group-item" (click)="settingActive=1" [ngClass]="{'active': (settingActive == 1)}">Perfil</a>
+                  <a href="#" class="list-group-item" (click)="settingActive=2" [ngClass]="{'active': (settingActive == 2)}">Cuenta</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-9">
+          <div *ngIf="settingActive == 1">
+              <div class="card b">
+                  <div class="card-header bg-gray-lighter text-bold">Perfil</div>
+                  <div class="card-body">
+                      <form action="">
+                          <div class="form-group">
+                              <label>Foto</label>
+                              <label for="image-input" class="file-upload">
+                                  <button class="btn btn-secondary">
+                                      <em class="fa fa-upload mr"></em> Subir nueva foto</button>
+                                  <input id="image-input" type="file">
+                              </label>
+                          </div>
+                          <div class="form-group">
+                              <label>Apellido y Nombre</label>
+                              <input class="form-control" type="text" />
+                          </div>
+                          <div class="form-group">
+                              <label>Ejemplo de adicionales</label>
+                              <input class="form-control" type="text" />
+                          </div>
+                          <button class="btn btn-primary" type="button">Actualizar</button>
+                          <p>
+                              <small class="text-muted">* Los cambios requieren aprobación de un Administrador</small>
+                          </p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div *ngIf="settingActive == 2">
+              <div class="card b">
+                  <div class="card-header bg-gray-lighter text-bold">Cuenta</div>
+                  <div class="card-body">
+                      <form action="">
+                          <div class="form-group">
+                              <label>Contraseña Actual</label>
+                              <input class="form-control" type="password" />
+                          </div>
+                          <div class="form-group">
+                              <label>Nueva Contraseña</label>
+                              <input class="form-control" type="password" />
+                          </div>
+                          <div class="form-group">
+                              <label>Confirmar Nueva Contraseña</label>
+                              <input class="form-control" type="password" />
+                          </div>
+                          <button class="btn btn-info" type="button">Guardar</button>
+                          <p>
+                              <small class="text-muted">* Los cambios requieren la aprobación de un Administrador</small>
+                          </p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

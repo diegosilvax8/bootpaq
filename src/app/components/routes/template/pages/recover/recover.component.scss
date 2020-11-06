@@ -1,0 +1,49 @@
+ /* INICIO FONDO */
+
+ .wrapper {
+
+    background-image: url(/assets/img/login/wallagriculture.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.overlay {
+    height:100%;
+    position: absolute;;
+    z-index: 0;
+    width: 100%;
+    left:0;
+    top:0;
+    background: rgba(0,0,0,0.2);
+    margin:0;
+  }
+
+   /* FIN FONDO */
+
+  /* INICIO CARDS */
+  
+.card {
+    box-shadow: 0 0 3px 0px #1a8823;
+    border-radius: 8px;
+  }
+
+  img {
+    height: 35%;
+    width: 35%;
+    text-align: center;
+  }
+
+/* FIN CARDS */
+
+h4 {
+    color: #1a8823;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: black;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+}
