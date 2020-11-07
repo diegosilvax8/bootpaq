@@ -37,7 +37,7 @@ const Produccion = {
 
 const Variedades = {
     text: 'Variedades',
-    link: '/variedades',
+    link: '/variedades/uvas',
     icon: 'icon-grid'
 };
 
