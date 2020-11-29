@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
-import { ProduccionComponent } from './produccion/produccion.component';
 import { Routes, RouterModule } from '@angular/router';
+import { NgxSelectModule } from 'ngx-select-ex'
+
+import { SharedModule } from '../../../shared/shared.module';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-    { path: '', component: ProduccionComponent },
+    { path: 'products', component: ProductsComponent }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes)
+        SharedModule,
+        RouterModule.forChild(routes),
+        NgxSelectModule
     ],
-    declarations: [ProduccionComponent],
+    declarations: [
+        ProductsComponent
+    ],
     exports: [
         RouterModule
     ]

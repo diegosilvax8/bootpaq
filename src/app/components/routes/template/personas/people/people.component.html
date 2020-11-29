@@ -6,14 +6,14 @@
     <div class="agregar">
  <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-primary ml-auto" (click)="classicModal.show()"> <em class="fa fa-plus-circle fa-fw mr-1"></em>Nuevo Usuario</button>
+        <button type="button" class="btn btn-primary ml-auto" (click)="classicModalNewUser.show()"> <em class="fa fa-plus-circle fa-fw mr-1"></em>Nuevo Usuario</button>
         <!-- Classc modal -->
     </div>
-        <div class="modal fade" bsModal #classicModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal fade" bsModal #classicModalNewUser="bs-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Control de Usuario</h4>
+                        <h4 class="modal-title">Nuevo Usuario</h4>
                         <button type="button" class="close" aria-label="Close" (click)="classicModal.hide()">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -57,14 +57,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-md-10">
-                                                            <button class="btn btn-info" type="submit">Actualizar</button>
-                                                        </div>
-                                                    </div>
                                                 </form>
                                                 <div class="text-right">
-                                                    <button class="btn btn-danger" type="submit">Borrar Contacto</button>
+                                                    <button class="btn btn-primary" type="submit">Nuevo Contacto</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,11 +86,76 @@
                 <h4>Audrey Hunt</h4>
                 <p>Hello, I'm a just a dummy contact in your contact list and this is my presentation text. Have fun!</p>
             </div>
-            <div class="card-footer text-center">
+            <div class="card-footer">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <div class="text-center">
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
+        </div>
         <!-- Classc modal -->
+        <div class="modal fade" bsModal #classicModalEditUser="bs-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editar Usuario</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="classicModal.hide()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                                <div class="card card-default">
+                                    <div class="card-body">
+                                        <div class="row py-4 justify-content-center">
+                                            <div class="col-12 col-sm-10">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group row">
+                                                        <label class="text-bold col-xl-2 col-md-3 col-4 col-form-label text-right" for="inputContact1">Apellido y Nombre</label>
+                                                        <div class="col-xl-10 col-md-9 col-8">
+                                                            <input class="form-control" id="inputContact1" type="text" placeholder="" value="Apellido y Nombre" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="text-bold col-xl-2 col-md-3 col-4 col-form-label text-right" for="inputContact2">Email</label>
+                                                        <div class="col-xl-10 col-md-9 col-8">
+                                                            <input class="form-control" id="inputContact2" type="email" value="mail@ejemplo.com" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="text-bold col-xl-2 col-md-3 col-4 col-form-label text-right" for="inputContact3">Teléfono / Celular</label>
+                                                        <div class="col-xl-10 col-md-9 col-8">
+                                                            <input class="form-control" id="inputContact3" type="text" value="Código de Area sin 0 ni 15" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="text-bold col-xl-2 col-md-3 col-4 col-form-label text-right" for="inputContact6">Dirección</label>
+                                                        <div class="col-xl-10 col-md-9 col-8">
+                                                            <textarea class="form-control" id="inputContact6" row="4">Dirección</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-2 col-md-3 col-4"></div>
+                                                        <div class="col-xl-10 col-md-9 col-8">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input class="custom-control-input" id="customCheck1" type="checkbox" />
+                                                                <label class="custom-control-label" for="customCheck1">Contacto Favorito?</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="text-left">
+                                                    <button class="btn btn-primary" type="submit">Actualizar Contacto</button>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button class="btn btn-danger" type="submit">Borrar Contacto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 <!-- Fin Boton Modal -->
             </div>
         </div>
@@ -115,7 +175,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -136,7 +196,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -157,7 +217,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -178,7 +238,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -199,7 +259,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -220,7 +280,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>
@@ -241,7 +301,7 @@
             <div class="card-footer text-center">
 <!-- Inicio Boton Modal -->
         <!-- CLassic modal -->
-        <button type="button" class="btn btn-xs btn-primary" (click)="classicModal.show()">Editar Usuario</button>
+        <button type="button" class="btn btn-xs btn-primary" (click)="classicModalEditUser.show()">Editar Usuario</button>
         <!-- Classc modal -->
 <!-- Fin Boton Modal -->
             </div>

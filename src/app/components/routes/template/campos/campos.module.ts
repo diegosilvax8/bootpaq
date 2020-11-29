@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
-import { CamposComponent } from './campos/campos.component';
 import { Routes, RouterModule } from '@angular/router';
+import { NgxSelectModule } from 'ngx-select-ex'
+
+import { SharedModule } from '../../../shared/shared.module';
+import { SectoresComponent } from './sectores/sectores.component';
 
 const routes: Routes = [
-    { path: '', component: CamposComponent },
+    { path: 'sectores', component: SectoresComponent }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes)
+        SharedModule,
+        RouterModule.forChild(routes),
+        NgxSelectModule
     ],
-    declarations: [CamposComponent],
+    declarations: [
+        SectoresComponent
+    ],
     exports: [
         RouterModule
     ]

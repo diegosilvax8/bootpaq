@@ -19,19 +19,19 @@ const Proyectos = {
 
 const Procedimientos = {
     text: 'Procedimiento',
-    link: '/procedimientos',
+    link: '/procedimientos/pasos',
     icon: 'icon-organization'
 };
 
 const Campos = {
     text: 'Campos',
-    link: '/campos',
+    link: '/campos/sectores',
     icon: 'icon-crop'
 };
 
 const Produccion = {
     text: 'Produccion',
-    link: '/produccion',
+    link: '/produccion/products',
     icon: 'icon-briefcase'
 };
 
@@ -49,7 +49,7 @@ const Personas = {
 
 const Reportes = {
     text: 'Reportes',
-    link: '/reportes',
+    link: '/reportes/base',
     icon: 'icon-chart'
 };
 

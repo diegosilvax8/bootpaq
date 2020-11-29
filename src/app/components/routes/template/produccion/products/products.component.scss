@@ -1,0 +1,13 @@
+@import "../../../../shared/styles/bootstrap/functions";
+@import "../../../../shared/styles/bootstrap/variables";
+@import "../../../../shared/styles/bootstrap/mixins";
+@import '../../../../shared/styles/app/variables';
+
+.agregar{
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+}

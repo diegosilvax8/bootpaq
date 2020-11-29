@@ -1,0 +1,178 @@
+<div class="content-heading">Producción</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="agregar">
+     <!-- Inicio Boton Modal -->
+            <!-- CLassic modal -->
+            <button type="button" class="btn btn-primary ml-auto" (click)="classicModal.show()"> <em class="fa fa-plus-circle fa-fw mr-1"></em>Agregar Producción</button>
+            <!-- Classc modal -->
+        </div>
+            <div class="modal fade" bsModal #classicModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Producción</h4>
+                            <button type="button" class="close" aria-label="Close" (click)="classicModal.hide()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                            <!-- INICIO CUERPO MODAL-->
+                        <div class="modal-body">
+       
+                                         <div class="card">
+                                            <div class="card-body">
+                                               <div class="container">
+                                                  <div class="row">
+                                                     <!-- INICIO COLUMNA -->
+                                                     <div class="container">
+                                                        <fieldset>
+                                                            <select class="custom-select custom-select-sm">
+                                                                <option selected="">Variedad</option>
+                                                                <option value="1">Opción Uno</option>
+                                                                <option value="2">Opción Dos</option>
+                                                                <option value="3">Opción Tres</option>
+                                                            </select>
+                                                        </fieldset><fieldset>
+                                                            <select class="custom-select custom-select-sm">
+                                                                <option selected="">Campo</option>
+                                                                <option value="1">Opción Uno</option>
+                                                                <option value="2">Opción Dos</option>
+                                                                <option value="3">Opción Tres</option>
+                                                            </select>
+                                                        </fieldset>
+                                                        <label>Fecha:</label>
+                                                        <fieldset>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-12">
+                                                                    <input class="form-control" type="text" placeholder="05/10/2020" />
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <label>Toneladas:</label>
+                                                        <fieldset>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-12">
+                                                                    <input class="form-control" type="text" placeholder="56 tn" />
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <label>Descripción:</label>
+                                                        <fieldset>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-12">
+                                                                    <input class="form-control" type="text" placeholder="Descripción" />
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                     </div>
+                                                     <!-- FIN COLUMNA -->
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <div class="guardar text-center">
+                                            <button type="button" class="btn btn-info ml-auto">Guardar</button>
+                                            </div>
+                                        </div>
+                         </div>
+                         <!-- FIN CUERPO MODAL-->
+                    </div>
+                </div>
+            </div>
+     <!-- Fin Boton Modal -->
+    </div>
+    <div class="row">
+        <!-- Article Content-->
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <strong>Variedad</strong>
+                                </th>
+                                <th>
+                                    <strong>Campo</strong>
+                                </th>
+                                <th>
+                                    <strong>Fecha</strong>
+                                </th>
+                                <th>
+                                    <strong>Tn</strong>
+                                </th>
+                                <th>
+                                    <strong>kg/ha</strong>
+                                </th>
+                                <th>
+                                    <strong>Detalles</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Malbec</td>
+                                <td>Campo 1</td>
+                                <td>05/10/2020</td>
+                                <td>5452 Tn</td>
+                                <td>100 kg/ha</td>
+                                <td>Poda y limpieza</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-sm btn-secondary" (click)="classicModal.show()"> <em class="fas fa-pencil-alt"></em>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" type="button">
+                                        <em class="fas fa-trash-alt"></em>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Malbec</td>
+                                <td>Campo 2</td>
+                                <td>05/11/2020</td>
+                                <td>3487 Tn</td>
+                                <td>87 kg/ha</td>
+                                <td>Poda y limpieza</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-sm btn-secondary" (click)="classicModal.show()"> <em class="fas fa-pencil-alt"></em>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" type="button">
+                                        <em class="fas fa-trash-alt"></em>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cabernet</td>
+                                <td>Campo 12</td>
+                                <td>28/10/2020</td>
+                                <td>486 Tn</td>
+                                <td>85 kg/ha</td>
+                                <td>Poda y limpieza</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-sm btn-secondary" (click)="classicModal.show()"> <em class="fas fa-pencil-alt"></em>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" type="button">
+                                        <em class="fas fa-trash-alt"></em>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Red Globe</td>
+                                <td>Campo 4</td>
+                                <td>05/04/2020</td>
+                                <td>4781 Tn</td>
+                                <td>48 kg/ha</td>
+                                <td>Poda y limpieza</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-sm btn-secondary" (click)="classicModal.show()"> <em class="fas fa-pencil-alt"></em>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" type="button">
+                                        <em class="fas fa-trash-alt"></em>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

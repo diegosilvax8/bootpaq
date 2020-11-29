@@ -5,6 +5,7 @@ import { ChartsModule as Ng2ChartsModule } from 'ng2-charts';
 import { SharedModule } from '../../../shared/shared.module';
 import { ProjectComponent } from './project/project.component';
 
+
 const routes: Routes = [
     { path: 'projects', component: ProjectComponent },
 ];

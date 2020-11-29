@@ -18,7 +18,9 @@
       </div>
       <div class="col-xl-8">
          <div class="card card-default">
-            <div class="card-header">Finalizado</div>
+            <div class="card-header text-right">
+               <button class="mr-1 btn btn-pill-left btn-success mb-1 btn-xs" type="button">FINALIZADO</button>
+            </div>
             <div class="card-body">
                <div class="table-responsive">
                   <table class="table">
@@ -85,74 +87,9 @@
       </div>
       <div class="col-xl-8">
          <div class="card card-default">
-            <div class="card-header">Finalizado</div>
-            <div class="card-body">
-               <div class="table-responsive">
-                  <table class="table">
-                     <thead>
-                        <tr>
-                           <th>Nombre</th>
-                           <th>Descripción</th>
-                           <th>Comienzo</th>
-                           <th>Finalización</th>
-                           <th>Categoría</th>
-                           <th>Responsable</th>
-                           <th>Estado</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr class="table-success">
-                           <td>Poda de Primavera</td>
-                           <td>Text</td>
-                           <td>05/10/2020</td>
-                           <td>07/10/2020</td>
-                           <td>Poda y limpieza</td>
-                           <td>Eduardo Gómez</td>
-                           <td>Finalizada</td>
-                        </tr>
-                        <tr class="table-info">
-                           <td>Aplicación Fertiliza...</td>
-                           <td>Text</td>
-                           <td>07/10/2020</td>
-                           <td>10/10/2020</td>
-                           <td>Fertilización</td>
-                           <td>Roberto Sánchez</td>
-                           <td>En progreso</td>
-                        </tr>
-                        <tr class="table-warning">
-                           <td>Riego Inicial</td>
-                           <td>Text</td>
-                           <td>02/10/2020</td>
-                           <td>02/10/2020</td>
-                           <td>Riego</td>
-                           <td>Roberto Sánchez</td>
-                           <td>Suspendida</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
+            <div class="card-header text-right">
+               <button class="mr-1 btn btn-pill-left btn-primary mb-1 btn-xs" type="button">EN PROCESO</button>
             </div>
-         </div>
-      </div>
-   </div>
-   <!-- END row-->
-   <!-- START row-->
-   <div class="row">
-      <div class="col-lg-4">
-         <div class="card card-default" id="cardChart6">
-            <div class="card-header">
-               <div class="card-title">Proyecto 2</div>
-            </div>
-            <div class="card-wrapper">
-               <div class="card-body">
-                  <div flot [dataset]="donutData" [options]="donutOptions" height="300"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-xl-8">
-         <div class="card card-default">
-            <div class="card-header">Finalizado</div>
             <div class="card-body">
                <div class="table-responsive">
                   <table class="table">
